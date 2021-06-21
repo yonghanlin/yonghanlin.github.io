@@ -1,0 +1,63 @@
+html,body{
+    margin:0;
+    padding:0;
+    border:0;
+}
+header{
+    padding: 50px;
+    background: #003049;
+    color:white;
+    text-align: center;
+    font-family:Courier;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    background-color: burlywood;
+}
+.menu-item{
+    color:white;
+    cursor:pointer;
+    padding: 10px 30px 10px 30px;
+    width:80px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.2em;
+}
+.menu-item:hover{
+    color: #ffffffb0;
+}
+.container{
+    padding:20px;
+}
+section{
+    padding: 20px 0px 20px 0px;
+    max-width:900px;
+    margin:auto;
+}
+a{
+    color: inherit;
+}
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+i{
+    font-size: 1.5em;
+    margin: 0px 5px 0px 5px;
+}
+#my_photo{
+    border-radius:100%;
+    width:150px;
+}
+h2{
+    font-family: monospace;
+}
+#about_me, #projects, #CV{
+    font-family:'Segoe UI';
+}
+h1{
+    font-size: 2em;
+}
