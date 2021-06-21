@@ -21,10 +21,10 @@ header{
     color:white;
     cursor:pointer;
     padding: 10px 30px 10px 30px;
-    width:80px;
+    width:200px;
     text-align: center;
     font-family: monospace;
-    font-size: 1.2em;
+    font-size: 2em;
 }
 .menu-item:hover{
     color: #ffffffb0;
