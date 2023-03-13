@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	position:relative;
 }
 
 ol, ul {
@@ -3102,7 +3103,7 @@ input, select, textarea {
 				bottom: auto;
 				left: auto;
 				padding: 4em 4em 6em 4em;
-				position: relative;
+				/*position: relative;*/
 				text-align: center;
 				width: 100%;
 			}
@@ -3243,3 +3244,25 @@ input, select, textarea {
 			}
 
 	}
+
+	.scroll-container {
+		position: absolute;
+		top: 0;
+		right:0;
+		height: 100%;
+		margin-right: 1em;
+	  }
+	
+	  .scroll-container:before {
+		content: '';
+		display: block;
+		height: 100vh;
+		pointer-events: none;
+	  }
+	
+	  .scroll-container a {
+		position: sticky;
+		top: 88vh;
+		cursor: pointer;
+		font-size: 30px;
+	  }
