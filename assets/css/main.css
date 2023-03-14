@@ -3000,6 +3000,16 @@ input, select, textarea {
 				font-size: 12pt;
 			}
 
+			.scroll-container a {
+				position: absolute;
+				margin-right: 1em;
+				cursor: pointer;
+				font-size: 30px;
+				right:0;
+				margin-bottom: 1em;
+		
+			  }
+
 	}
 
 /* Large */
@@ -3044,6 +3054,15 @@ input, select, textarea {
 				width: calc(100% - 30%);
 			}
 
+			.scroll-container a {
+				position: absolute;
+				cursor: pointer;
+				font-size: 30px;
+				right:0;
+				margin-bottom: 1em;
+				margin-right: 0em;
+			  }
+		
 	}
 
 /* Medium */
@@ -3132,6 +3151,15 @@ input, select, textarea {
 				width: 100%;
 			}
 
+			.scroll-container a {
+				position: absolute;
+				margin-right:1em;
+				cursor: pointer;
+				font-size: 30px;
+				right:0;
+				margin-bottom: 1em;
+		
+			  }
 	}
 
 /* Small */
@@ -3217,6 +3245,19 @@ input, select, textarea {
 					margin-top: -1em;
 				}
 
+			.scroll-container a{
+				position: absolute;
+				margin-right: 0.5em;
+				cursor: pointer;
+				font-size: 30px;
+				right:0;
+				margin-bottom: 1em;
+				}
+
+				.scroll-container{
+					margin-bottom: 5em;
+				  }
+
 	}
 
 /* XSmall */
@@ -3243,9 +3284,24 @@ input, select, textarea {
 				padding-left: 0;
 			}
 
+			.scroll-container a{
+				position: absolute;
+				margin-right: 0.5em;
+				cursor: pointer;
+				font-size: 30px;
+				right:0;
+				margin-bottom: 1em;
+				}
+
+				.scroll-container{
+					margin-bottom: 5em;
+				  }
+
+
+
 	}
 
-	.scroll-container {
+	/*.scroll-container {
 		position: absolute;
 		top: 0;
 		right:0;
@@ -3265,4 +3321,8 @@ input, select, textarea {
 		top: 88vh;
 		cursor: pointer;
 		font-size: 30px;
-	  }
+	  }*/
+
+	  
+
+	  
