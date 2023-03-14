@@ -1,6 +1,5 @@
 Yong-Han Lin's Personal Website
 
-Credits:
 Design:
 Strata by HTML5 UP
 html5up.net | @ajlkn
