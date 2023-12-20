@@ -180,15 +180,15 @@
 					<div class="row">
 						<ul>
 							
-							<li><div class="trigger mobile_notifications experience_sampling_method system_evaluation" style="margin-bottom: 5px; padding: 5px;"><span style="font-weight: 600;color: #035772;">Pinning, Sorting, and Categorizing Notifications: A Mixed-methods Usage and Experience Study of Mobile Notification-management Features </span> 
+							<li><div class="trigger mobile_notifications experience_sampling_method ubiquitous_devices system_evaluation" style="margin-bottom: 5px; padding: 5px;"><span style="font-weight: 600;color: #035772;">Pinning, Sorting, and Categorizing Notifications: A Mixed-methods Usage and Experience Study of Mobile Notification-management Features </span> 
 								[<a href="mailto:alberta.cs07@nycu.edu.tw" target="_blank">Request for paper</a>][Project Site]  - Full paper | Project lead<br>
 								<u>Yong-Han Lin</u>,  Li-Ting Su, Uei-Dar Chen, Yi-Chi Lee, Peng-Jui Wang, Yung-Ju Chang (In submission to IMWUT '24)
 						   </div></li>
-							<li><div class="trigger mobile_notifications experience_sampling_method system_evaluation" style="margin-bottom: 5px; padding: 5px;"><span style="font-weight: 600;color: #035772;">Automatic, Manual, or Hybrid? A Preliminary Investigation of Users’ Perception of Features for Supporting Notification Management </span> 
+							<li><div class="trigger mobile_notifications experience_sampling_method ubiquitous_devices system_evaluation" style="margin-bottom: 5px; padding: 5px;"><span style="font-weight: 600;color: #035772;">Automatic, Manual, or Hybrid? A Preliminary Investigation of Users’ Perception of Features for Supporting Notification Management </span> 
 								[<a href="https://dl.acm.org/doi/abs/10.1145/3594739.3610699" target="_blank">ACM Digital Library</a>]  - Poster | Project Lead<br>
 								<u>Yong-Han Lin</u>,  Li-Ting Su, Uei-Dar Chen, Peng-Jui Wang, Yi-Chi Lee, Yung-Ju Chang (UbiComp/ISWC '23)
 							</div></li>
-							<li><div class="trigger mobile_notifications system_evaluation" style="margin-bottom: 5px; padding: 5px;"><span style="font-weight: 600;color: #035772;">A Notification Management System for: Sorting and Classifying Smartphone’s Notifications </span>
+							<li><div class="trigger mobile_notifications ubiquitous_devices system_evaluation" style="margin-bottom: 5px; padding: 5px;"><span style="font-weight: 600;color: #035772;">A Notification Management System for: Sorting and Classifying Smartphone’s Notifications </span>
 								 [<a href="files/TAICHI_2021_Poster_file_59.pdf" target="_blank">link</a>] - Poster | Project lead<br>
 								<u>Yong-Han Lin</u>*, Yin-Hsuan Liao*, Chia-Yu Huang*, Yu-Wei Yang, Hsin-Chien Tung, Chieh Hsu, Yung-Ju Chang (TAICHI '21)
 							</div></li>
@@ -317,11 +317,17 @@
 						slides.item(i).style.backgroundColor = 'white';
 					}
 					elementClicked_mobile_notifications = false;
+					document.getElementById("topic_trigger_mobile_notifications").style.fontWeight="400";
 				}else{
 					var slides = document.getElementsByClassName("mobile_notifications");
 					for (var i = 0; i < slides.length; i++) {
 						slides.item(i).style.backgroundColor = '#FAEBD7';
 					}
+    				document.getElementById("topic_trigger_mobile_notifications").style.fontWeight="900";
+					document.getElementById("topic_trigger_experience_sampling_method").style.fontWeight="400";
+					document.getElementById("topic_trigger_ubiquitous_devices").style.fontWeight="400";
+					document.getElementById("topic_trigger_system_evaluation").style.fontWeight="400";
+					document.getElementById("topic_trigger_social_support").style.fontWeight="400";
 					elementClicked_experience_sampling_method = false;
 					elementClicked_ubiquitous_devices = false;
 					elementClicked_system_evaluation = false;
@@ -341,11 +347,19 @@
 						slides.item(i).style.backgroundColor = 'white';
 					}
 					elementClicked_experience_sampling_method = false;
+					
+					document.getElementById("topic_trigger_experience_sampling_method").style.fontWeight="400";
+					
 				}else{
 					var slides = document.getElementsByClassName("experience_sampling_method");
 					for (var i = 0; i < slides.length; i++) {
 						slides.item(i).style.backgroundColor = '#FAEBD7';
 					}
+					document.getElementById("topic_trigger_mobile_notifications").style.fontWeight="400";
+					document.getElementById("topic_trigger_experience_sampling_method").style.fontWeight="900";
+					document.getElementById("topic_trigger_ubiquitous_devices").style.fontWeight="400";
+					document.getElementById("topic_trigger_system_evaluation").style.fontWeight="400";
+					document.getElementById("topic_trigger_social_support").style.fontWeight="400";
 					elementClicked_mobile_notifications = false;
 					elementClicked_ubiquitous_devices = false;
 					elementClicked_system_evaluation = false;
@@ -365,11 +379,19 @@
 						slides.item(i).style.backgroundColor = 'white';
 					}
 					elementClicked_ubiquitous_devices = false;
+					
+					document.getElementById("topic_trigger_ubiquitous_devices").style.fontWeight="400";
+					
 				}else{
 					var slides = document.getElementsByClassName("ubiquitous_devices");
 					for (var i = 0; i < slides.length; i++) {
 						slides.item(i).style.backgroundColor = '#FAEBD7';
 					}
+					document.getElementById("topic_trigger_mobile_notifications").style.fontWeight="400";
+					document.getElementById("topic_trigger_experience_sampling_method").style.fontWeight="400";
+					document.getElementById("topic_trigger_ubiquitous_devices").style.fontWeight="900";
+					document.getElementById("topic_trigger_system_evaluation").style.fontWeight="400";
+					document.getElementById("topic_trigger_social_support").style.fontWeight="400";
 					elementClicked_mobile_notifications = false;
 					elementClicked_experience_sampling_method = false;
 					elementClicked_system_evaluation = false;
@@ -389,11 +411,19 @@
 						slides.item(i).style.backgroundColor = 'white';
 					}
 					elementClicked_system_evaluation = false;
+					
+					document.getElementById("topic_trigger_system_evaluation").style.fontWeight="400";
+					
 				}else{
 					var slides = document.getElementsByClassName("system_evaluation");
 					for (var i = 0; i < slides.length; i++) {
 						slides.item(i).style.backgroundColor = '#FAEBD7';
 					}
+					document.getElementById("topic_trigger_mobile_notifications").style.fontWeight="400";
+					document.getElementById("topic_trigger_experience_sampling_method").style.fontWeight="400";
+					document.getElementById("topic_trigger_ubiquitous_devices").style.fontWeight="400";
+					document.getElementById("topic_trigger_system_evaluation").style.fontWeight="900";
+					document.getElementById("topic_trigger_social_support").style.fontWeight="400";
 					elementClicked_mobile_notifications = false;
 					elementClicked_experience_sampling_method = false;
 					elementClicked_ubiquitous_devices = false;
@@ -412,12 +442,19 @@
 					for (var i = 0; i < slides.length; i++) {
 						slides.item(i).style.backgroundColor = 'white';
 					}
+					
+					document.getElementById("topic_trigger_social_support").style.fontWeight="400";
 					elementClicked_social_support = false;
 				}else{
 					var slides = document.getElementsByClassName("social_support");
 					for (var i = 0; i < slides.length; i++) {
 						slides.item(i).style.backgroundColor = '#FAEBD7';
 					}
+					document.getElementById("topic_trigger_mobile_notifications").style.fontWeight="400";
+					document.getElementById("topic_trigger_experience_sampling_method").style.fontWeight="400";
+					document.getElementById("topic_trigger_ubiquitous_devices").style.fontWeight="400";
+					document.getElementById("topic_trigger_system_evaluation").style.fontWeight="400";
+					document.getElementById("topic_trigger_social_support").style.fontWeight="900";
 					elementClicked_mobile_notifications = false;
 					elementClicked_experience_sampling_method = false;
 					elementClicked_ubiquitous_devices = false;
