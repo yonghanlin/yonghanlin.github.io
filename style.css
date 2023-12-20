@@ -42,6 +42,9 @@ section{
     max-width:650px;
     margin:auto;
 }
+h5{
+    font-weight:normal;
+}
 a{
     color: inherit;
     text-decoration: none;
