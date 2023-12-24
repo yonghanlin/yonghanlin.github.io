@@ -3370,7 +3370,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #483D8B;
+		background-color: #261c3e;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
@@ -3907,3 +3907,114 @@ input, select, textarea {
 			}
 
 		}
+
+		.top-pane{
+			background: url(../../../images/logo.jpg) center scroll;
+			background-size: cover;
+		}
+
+		.center {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			
+			text-align: center;
+		  }
+
+		  .google-play-button-center{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 12rem;
+			text-align: center;
+		  }
+
+		  .button-center {
+			margin: 0;
+			position: absolute;
+			top: 30%;
+			left: 50%;
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		  }
+
+		  .button-container {
+			height: 200px;
+			position: relative;
+			
+		  }
+
+		  .name_text{
+			color:#483D88;
+			text-align: center;
+			font-weight: 1000;
+		  }
+
+		  .tooltip {
+			position: relative;
+			display: inline-block;
+		  }
+		  
+		  .tooltip .tooltiptext {
+			visibility: hidden;
+			width: 120px;
+			background-color: black;
+			color: #fff;
+			text-align: center;
+			border-radius: 6px;
+			padding: 0;
+			position: absolute;
+			z-index: 1;
+			top: 0px;
+			left: 110%;
+			font-size: 8px;
+		  }
+		  
+		  .tooltip .tooltiptext::after {
+			content: " ";
+			position: absolute;
+			top: 50%;
+			right: 100%; /* To the left of the tooltip */
+			margin-top: -5px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: transparent black transparent transparent;
+		  }
+		  
+		  .tooltip:hover .tooltiptext {
+			visibility: visible;
+		  }
+
+		  .tooltip .tooltiptext_down {
+			visibility: hidden;
+			width: 130px;
+			background-color: black;
+			color: #fff;
+			text-align: center;
+			border-radius: 6px;
+			padding: 0 10px;
+			position: absolute;
+			z-index: 1;
+			top: 100%;
+			left: 50%;
+			margin-left: -65px;
+			margin-top: 5px;
+			font-size: 10px;
+		  }
+		  
+		  .tooltip .tooltiptext_down::after {
+			content: "";
+			position: absolute;
+			bottom: 100%;
+			left: 50%;
+			margin-left: -5px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: transparent transparent black transparent;
+		  }
+		  
+		  .tooltip:hover .tooltiptext_down {
+			visibility: visible;
+		  }
+
+		  
