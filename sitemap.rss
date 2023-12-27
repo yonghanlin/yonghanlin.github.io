@@ -3,26 +3,111 @@
 <rss version="2.0">
   <channel>
     <title>-</title>
-    <link>https://scod0401.github.io</link>
+    <link>https://scod0401.github.io/index.html</link>
     <description />
     <item>
       <guid>https://scod0401.github.io</guid>
       <link>https://scod0401.github.io</link>
-      <title>Yong-Han Lin | Human-Computer Interaction</title>
-      <description />
-      <pubDate>Tue, 14 Mar 2023 03:13:40 Z</pubDate>
+      <title>Yong-Han Lin</title>
+      <description>Yong-Han Lin's personal website, she is currently a Human-Computer Interaction (HCI) research assistant at Taiwan's National Yang-Ming Chiao-Tung University.</description>
     </item>
     <item>
-      <guid>https://scod0401.github.io/files/TAICHI_2021_Poster_file_59.pdf</guid>
-      <link>https://scod0401.github.io/files/TAICHI_2021_Poster_file_59.pdf</link>
-      <description />
-      <pubDate>Tue, 14 Mar 2023 03:13:40 Z</pubDate>
+      <guid>https://scod0401.github.io/more_about_me/index.html</guid>
+      <link>https://scod0401.github.io/more_about_me/index.html</link>
+      <title>Yong-Han Lin</title>
+      <description>Yong-Han Lin's personal website</description>
     </item>
     <item>
-      <guid>https://scod0401.github.io/images/avatar_original.jpg</guid>
-      <link>https://scod0401.github.io/images/avatar_original.jpg</link>
+      <guid>https://scod0401.github.io/files/Visual_Content_OSS_EASE_2022.pdf</guid>
+      <link>https://scod0401.github.io/files/Visual_Content_OSS_EASE_2022.pdf</link>
       <description />
-      <pubDate>Tue, 14 Mar 2023 03:13:40 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://scod0401.github.io/files/Multi_Device_Noti_CHI_2023.pdf</guid>
+      <link>https://scod0401.github.io/files/Multi_Device_Noti_CHI_2023.pdf</link>
+      <description />
+    </item>
+    <item>
+      <guid>https://scod0401.github.io/files/NotiManager_TAICHI_2021.pdf</guid>
+      <link>https://scod0401.github.io/files/NotiManager_TAICHI_2021.pdf</link>
+      <description />
+    </item>
+    <item>
+      <guid>https://scod0401.github.io/files/NotiManager_UbiComp_2023_Poster.pdf</guid>
+      <link>https://scod0401.github.io/files/NotiManager_UbiComp_2023_Poster.pdf</link>
+      <description />
+    </item>
+    <item>
+      <guid>https://scod0401.github.io/files/NotiManager_UbiComp_2023.pdf</guid>
+      <link>https://scod0401.github.io/files/NotiManager_UbiComp_2023.pdf</link>
+      <description />
+    </item>
+    <item>
+      <guid>https://scod0401.github.io/notimanager.html</guid>
+      <link>https://scod0401.github.io/notimanager.html</link>
+      <title>NotiManager</title>
+      <description />
+    </item>
+    <item>
+      <guid>https://scod0401.github.io/images/avatar_new.jpg</guid>
+      <link>https://scod0401.github.io/images/avatar_new.jpg</link>
+      <description />
+    </item>
+    <item>
+      <guid>https://scod0401.github.io/index.html</guid>
+      <link>https://scod0401.github.io/index.html</link>
+      <title>Yong-Han Lin</title>
+      <description>Yong-Han Lin's personal website, she is currently a Human-Computer Interaction (HCI) research assistant at Taiwan's National Yang-Ming Chiao-Tung University.</description>
+    </item>
+    <item>
+      <guid>https://scod0401.github.io/more_about_me/images/ted.jpg</guid>
+      <link>https://scod0401.github.io/more_about_me/images/ted.jpg</link>
+      <description />
+    </item>
+    <item>
+      <guid>https://scod0401.github.io/more_about_me/images/Stray_Rescue.png</guid>
+      <link>https://scod0401.github.io/more_about_me/images/Stray_Rescue.png</link>
+      <description />
+    </item>
+    <item>
+      <guid>https://scod0401.github.io/more_about_me/images/hackathon.jpg</guid>
+      <link>https://scod0401.github.io/more_about_me/images/hackathon.jpg</link>
+      <description />
+    </item>
+    <item>
+      <guid>https://scod0401.github.io/more_about_me/images/writing.jpg</guid>
+      <link>https://scod0401.github.io/more_about_me/images/writing.jpg</link>
+      <description />
+    </item>
+    <item>
+      <guid>https://scod0401.github.io/more_about_me/images/wind_band.jpg</guid>
+      <link>https://scod0401.github.io/more_about_me/images/wind_band.jpg</link>
+      <description />
+    </item>
+    <item>
+      <guid>https://scod0401.github.io/more_about_me/images/IOC.PNG</guid>
+      <link>https://scod0401.github.io/more_about_me/images/IOC.PNG</link>
+      <description />
+    </item>
+    <item>
+      <guid>https://scod0401.github.io/images/NotiManager/lab_logo.jpg</guid>
+      <link>https://scod0401.github.io/images/NotiManager/lab_logo.jpg</link>
+      <description />
+    </item>
+    <item>
+      <guid>https://scod0401.github.io/images/NotiManager/google-play-badge.png</guid>
+      <link>https://scod0401.github.io/images/NotiManager/google-play-badge.png</link>
+      <description />
+    </item>
+    <item>
+      <guid>https://scod0401.github.io/images/NotiManager/notimanager_main.png</guid>
+      <link>https://scod0401.github.io/images/NotiManager/notimanager_main.png</link>
+      <description />
+    </item>
+    <item>
+      <guid>https://scod0401.github.io/images/NotiManager/logo.jpg</guid>
+      <link>https://scod0401.github.io/images/NotiManager/logo.jpg</link>
+      <description />
     </item>
   </channel>
 </rss>

@@ -1,15 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://scod0401.github.io</loc>
-    <lastmod>2023-03-14</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://scod0401.github.io/files/TAICHI_2021_Poster_file_59.pdf</loc>
-    <lastmod>2023-03-14</lastmod>
-    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://scod0401.github.io/images/avatar_new.jpg</image:loc>
+      <!--ERROR - Object reference not set to an instance of an object.-->
+      <url>
+        <loc>https://scod0401.github.io/more_about_me/index.html</loc>
+        <image:image>
+          <image:loc>https://scod0401.github.io/more_about_me/images/wind_band.jpg</image:loc>
+          <!--ERROR - Object reference not set to an instance of an object.-->
+          <url>
+            <loc>https://scod0401.github.io/files/Visual_Content_OSS_EASE_2022.pdf</loc>
+          </url>
+          <url>
+            <loc>https://scod0401.github.io/files/Multi_Device_Noti_CHI_2023.pdf</loc>
+          </url>
+          <url>
+            <loc>https://scod0401.github.io/files/NotiManager_TAICHI_2021.pdf</loc>
+          </url>
+          <url>
+            <loc>https://scod0401.github.io/files/NotiManager_UbiComp_2023_Poster.pdf</loc>
+          </url>
+          <url>
+            <loc>https://scod0401.github.io/files/NotiManager_UbiComp_2023.pdf</loc>
+          </url>
+          <url>
+            <loc>https://scod0401.github.io/notimanager.html</loc>
+            <image:image>
+              <image:loc>https://scod0401.github.io/images/NotiManager/logo.jpg</image:loc>
+              <!--ERROR - Object reference not set to an instance of an object.-->
+              <url>
+                <loc>https://scod0401.github.io/index.html</loc>
+                <image:image>
+                  <image:loc>https://scod0401.github.io/images/avatar_new.jpg</image:loc>
+                  <!--ERROR - Object reference not set to an instance of an object.-->
+                </image:image>
+                <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+              </url>
+            </image:image>
+          </url>
+        </image:image>
+      </url>
+    </image:image>
   </url>
 </urlset>
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
