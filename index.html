@@ -223,6 +223,14 @@
 				
 				<div class="row">
 					<ul>
+						<li><div class="trigger mobile_notifications experience_sampling_method ubiquitous_devices system_evaluation" id="noti_alert" style="margin-bottom: 5px; padding: 5px;"><span style="font-weight: 600;color: #035772;">From Default to Distinct: Exploring the Effectiveness of Customized Notification
+							Alerts in Improving User Awareness of and Attendance to Mobile Notifications </span> 
+							- Full paper | Collaborator
+							<br>Li-Ting Su, <u>Yong-Han Lin</u>, Tang-Jie Chang, Jie Tsai, Zi-Xun Tang, Yung-Ju Chang 
+							<br><em>In submission to the 2024 ACM International Conference on Mobile Human-Computer Interaction</em> (MobileHCI '24)
+							<br>[<a class="abs_trigger" id="abs_noti_alert" style="cursor: pointer;">ABS</a>] 
+							[<a href="mailto:alberta.cs07@nycu.edu.tw" target="_blank">Request For Paper</a>]
+						</div></li>
 						<li><div class="trigger mobile_notifications experience_sampling_method ubiquitous_devices" id="multi_device" style="margin-bottom: 5px; padding: 5px;"><span style="font-weight: 600;color: #035772;">Multiple Device Users' Actual and Ideal Cross-Device Usage for Multi-Stage Notification-Interactions: An ESM Study Addressing the Usage Gap and Impacts of Device Context </span> 
 							- Full paper | Collaborator
 							<br>Fang-Ching Tseng, ​Zih-Yun Chiou, Ho-Hsuan Chuang,  Li-Ting Su, <u>Yong-Han Lin</u>, Yu-Rou Lin, Yi-Chi Lee, Peng-Jui Wang, Uei-Dar Chen, Yung-Ju Chang 
@@ -348,7 +356,7 @@
 		<footer id="footer">
 			<div class="inner">
 				<ul class="copyright">
-					<li>&copy; 2024 Yong-Han Lin. Last updated: Jan 22, 2024.</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+					<li>&copy; 2024 Yong-Han Lin. Last updated: Feb 2, 2024.</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
 				</ul>
 			</div>
 		</footer>
@@ -364,6 +372,7 @@
 			var elementClicked_abs_noti_evaluation = false;
 			var elementClicked_abs_auto_manual = false;
 			var elementClicked_abs_notimanager = false;
+			var elementClicked_abs_noti_alert = false;
 			var elementClicked_abs_multi_device = false;
 			var elementClicked_abs_visual_content_OSS = false;
 
@@ -434,6 +443,20 @@
 							"users to sort, classify, and pin notifications on their own preferences. The second one is Automated " +
 							"Organization, which uses machine learning models to sort notifications and classify them by their own " +
 							"categories. Three notification modes are designed by these two modes: Default, Manual Control, Automated Organization. " +
+							"</div>"
+						;
+					}
+				}else if(event.target && event.target.id === 'abs_noti_alert'){
+					var abs = document.getElementById("noti_alert");
+					
+					if(elementClicked_abs_noti_alert){
+						$("#abs_text_noti_alert").remove();
+						elementClicked_abs_noti_alert = false;
+					}else{	
+						elementClicked_abs_noti_alert = true;
+						abs.innerHTML +=
+							"<div id='abs_text_noti_alert' style='border:dashed; padding:1em; border-width:1px; border-radius:5px; margin:5px 0; border-color:#AAAAAA;'>" +
+							"This study investigates customized notification alerts’ impact on user awareness and notification attendance. Through a co-design workshop, we identified notification types users wish to differentiate via customized alerts. We then developed NotiSpeculate, an Android app delivering customized alerts for user-defined categories. A 3-week experience sampling study with 37 smartphone users demonstrated that customized alerts resulted in better users’ awareness of arriving notifications and more effective notification attendance. Also, delivery of customized alerts did not cause more disturbance than default alerts. However, a context-aware mechanism that restricted the delivery of customized alert did not decrease perceived disturbance but added confusion. In configuring categories, the categories most commonly defined by users were related to work and social interactions. Three main characteristics that participants sought from a customized notification alert were: familiarity, reflectiveness, and distinctiveness." +
 							"</div>"
 						;
 					}
