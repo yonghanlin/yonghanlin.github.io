@@ -1,48 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url>
-    <loc>https://yonghanlin.github.io</loc>
-    <image:image>
-      <image:loc>https://yonghanlin.github.io/images/avatar_new.jpg</image:loc>
-      <!--ERROR - Object reference not set to an instance of an object.-->
-      <url>
-        <loc>https://yonghanlin.github.io/more_about_me/index.html</loc>
-        <image:image>
-          <image:loc>https://yonghanlin.github.io/more_about_me/images/wind_band.jpg</image:loc>
-          <!--ERROR - Object reference not set to an instance of an object.-->
-          <url>
-            <loc>https://yonghanlin.github.io/files/Visual_Content_OSS_EASE_2022.pdf</loc>
-          </url>
-          <url>
-            <loc>https://yonghanlin.github.io/files/Multi_Device_Noti_CHI_2023.pdf</loc>
-          </url>
-          <url>
-            <loc>https://yonghanlin.github.io/files/NotiManager_TAICHI_2021.pdf</loc>
-          </url>
-          <url>
-            <loc>https://yonghanlin.github.io/files/NotiManager_UbiComp_2023_Poster.pdf</loc>
-          </url>
-          <url>
-            <loc>https://yonghanlin.github.io/files/NotiManager_UbiComp_2023.pdf</loc>
-          </url>
-          <url>
-            <loc>https://yonghanlin.github.io/notimanager.html</loc>
-            <image:image>
-              <image:loc>https://yonghanlin.github.io/images/NotiManager/logo.jpg</image:loc>
-              <!--ERROR - Object reference not set to an instance of an object.-->
-              <url>
-                <loc>https://yonghanlin.github.io/index.html</loc>
-                <image:image>
-                  <image:loc>https://yonghanlin.github.io/images/avatar_new.jpg</image:loc>
-                  <!--ERROR - Object reference not set to an instance of an object.-->
-                </image:image>
-                <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
-              </url>
-            </image:image>
-          </url>
-        </image:image>
-      </url>
-    </image:image>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://yonghanlin.github.io/</loc>
+  <lastmod>2024-04-17T22:25:20+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://yonghanlin.github.io/files/YongHan_Lin_CV.pdf</loc>
+  <lastmod>2024-04-17T22:25:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yonghanlin.github.io/notimanager.html</loc>
+  <lastmod>2024-04-17T22:25:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yonghanlin.github.io/files/NotiManager_UbiComp_2023.pdf</loc>
+  <lastmod>2024-04-17T22:25:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yonghanlin.github.io/files/NotiManager_UbiComp_2023_Poster.pdf</loc>
+  <lastmod>2024-04-17T22:25:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yonghanlin.github.io/files/NotiManager_TAICHI_2021.pdf</loc>
+  <lastmod>2024-04-17T22:25:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yonghanlin.github.io/files/Multi_Device_Noti_CHI_2023.pdf</loc>
+  <lastmod>2024-04-17T22:25:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yonghanlin.github.io/files/Visual_Content_OSS_EASE_2022.pdf</loc>
+  <lastmod>2024-04-17T22:25:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yonghanlin.github.io/more_about_me/index.html</loc>
+  <lastmod>2024-04-17T22:25:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yonghanlin.github.io/index.html</loc>
+  <lastmod>2024-04-17T22:25:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
