@@ -2148,6 +2148,13 @@ input, select, textarea {
 				width: 100%;
 			}
 
+
+	.logo{
+		width:25px;
+		height:25px;
+		vertical-align: middle;
+		margin: 0 3px 3px 1px;
+	}
 /* List */
 
 	ol {
