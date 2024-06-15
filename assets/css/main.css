@@ -2144,7 +2144,7 @@ input, select, textarea {
 			}
 
 			.image.avatar img {
-				/*border-radius: 100%;*/
+				border-radius: 100%;
 				width: 100%;
 			}
 
@@ -2662,7 +2662,7 @@ input, select, textarea {
 
 
 	#header .icons {
-		margin: 1em 0 0 0;
+		margin: 2em 0 0 0;
 	}
 
 	#header .icons a {
@@ -2683,7 +2683,7 @@ input, select, textarea {
 
 		#footer .copyright li {
 			/*border-left: solid 1px rgba(255, 255, 255, 0.25);*/
-			/*display: inline-block;*/
+			display: inline-block;
 			line-height: 2.25em;
 			margin-left: 0em;
 			padding-left: 0em;
@@ -3126,7 +3126,7 @@ input, select, textarea {
 				display: block;
 				margin-left: auto;
 				margin-right: auto;
-				width: 200px;
+				width: 100px;
 			}
 		/* Footer */
 
