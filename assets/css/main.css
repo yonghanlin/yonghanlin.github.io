@@ -121,6 +121,11 @@ input, select, textarea {
 			color: #035772 !important;
 			text-decoration: none;
 		}
+		
+		a.active {
+			/*background: #666;*/
+			color: #eee !important;
+		}
 
 	strong, b {
 		color: #787878;
@@ -2550,8 +2555,7 @@ input, select, textarea {
 			color: #b2b2b2 !important;
 			cursor: default;
 		}
-
-	
+		
 /* Work Item */
 
 	.work-item {
@@ -2651,6 +2655,7 @@ input, select, textarea {
 		text-align: center;
 		font-size: 30px;
 		font-weight: bold;
+		color: #ccc;
 	}
 	#self_intro{
 		margin-top: 10px;

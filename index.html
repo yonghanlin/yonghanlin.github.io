@@ -36,7 +36,7 @@
 				<div class="image avatar"><img src="images/avatar_new.jpg" alt="A girl enjoying a beautiful day and smiling at Malibu Beach." /></div>
 				<div id="main_name">Yong-Han Lin</div>
 				<div id="self_intro">
-					<div>HCI Researcher</div>
+					<div style="font-style: italic;">HCI Researcher</div>
 					<!--<div><i class="fas fa-map-marker-alt"></i> Hsinchu, Taiwan (GMT+8)/div>-->
 					
 					<!--<div>Undergraduate Researcher in MUI Lab at NYCU</div>
@@ -44,9 +44,9 @@
 					<div>EX-Software Engineering Intern at Tech Startup</div>-->
 					
 					<ul class="actions">
-						<li><a href="#updates" class="button col-4">Updates</a></li>
-						<li><a href="#publications" class="button col-4">Publications</a></li>
-						<li><a href="#more" class="button col-4">More</a></li>
+						<li><a href="#updates" class="button col-4 actions_button active" onclick="startAction(this)">Updates</a></li>
+						<li><a href="#publications" class="button col-4 actions_button" onclick="startAction(this)">Publications</a></li>
+						<li><a href="#more" class="button col-4 actions_button" onclick="startAction(this)">More</a></li>
 						<!--<li><a href="#projects" class="button col-4">Projects</a></li>-->
 						<!--<li><a href="#extracurricular_activities" class="button col-4">More</a></li>-->
 					</ul>
@@ -118,7 +118,7 @@
 			</section>
 
 			<!-- Updates -->
-			<section id="updates">
+			<section id="updates" class="section_topic">
 				<h2>Updates</h2>
 				<div class="row" style="height: 200px; overflow-y : scroll; -webkit-overflow-scrolling: touch;">
 					<table class="table">
@@ -196,7 +196,7 @@
 			</section>
 
 			<!-- Publications -->
-			<section id="publications">
+			<section id="publications" class="section_topic">
 				<h2>Publications</h2>
 				<h5><span style="font-weight: 600;">Keywords:</span>
 					<a class="topic_trigger" id="topic_trigger_system_evaluation" style="cursor: pointer;"><span style="color: #035772;">end-user empowerment</span></a> /
@@ -311,7 +311,7 @@
 				</div>
 			</section>
 
-			<section id="more">
+			<section id="more" class="section_topic">
 				<h2>More</h2>
 				<p>
 					Outside of research, I love... 
@@ -335,6 +335,7 @@
 						</ul>
 					</div>
 				</p>
+				
 			</section>
 
 			<!-- Projects -->
@@ -698,7 +699,33 @@
 					elementClicked_social_support = true;
 				}
 			}
-		
+			
+			function startAction(elem) {
+				
+				var a = document.getElementsByClassName("actions_button");
+				
+				for (i = 0; i < a.length; i++) {
+					a[i].classList.remove('active');
+				}
+				elem.classList.add('active');
+			}
+
+			window.onscroll = function() {
+				$('.section_topic').each(function() {
+					if($(window).scrollTop() >= $(this).offset().top-1) {
+						var id = $(this).attr('id');
+						$('.actions li a').removeClass('active');
+						$('.actions li a[href="#'+ id +'"]').addClass('active');
+					}
+				});
+				
+				if($(window).scrollTop() + $(window).height() >= $(document).height()) {
+				    $('.actions li a').removeClass('active');
+					$('.actions li a[href="#more"]').addClass('active');
+			   }
+			}
+			
+			
 		</script>
 
 		<script src="assets/js/jquery.min.js"></script>
