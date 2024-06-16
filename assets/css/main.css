@@ -127,6 +127,7 @@ input, select, textarea {
 			color: #eee !important;
 		}
 
+		
 	strong, b {
 		color: #787878;
 		font-weight: 400;
@@ -2040,7 +2041,10 @@ input, select, textarea {
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
-
+		
+		.icon:hover{
+			color: #eee !important;
+		}
 /* Image */
 
 	.image {
@@ -2478,8 +2482,15 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border-color: #035772;
-			color: #035772 !important;
+			border-bottom-color: transparent;
+			color: #eee !important;
+			text-decoration: none;
+		}
+		
+		.footer_button:hover{
+			border-bottom-color: transparent;
+			color: #eee !important;
+			text-decoration: none;
 		}
 
 		input[type="submit"].icon,
