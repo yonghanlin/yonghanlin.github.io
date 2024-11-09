@@ -225,13 +225,19 @@
 					<div class="inner" >
 						<h2 style="color: #483D88;">Publications</h2>
 						<div id="publications" style="padding-bottom: 40px;">
-							<div>
+							<div id="IMWUT">
 									<span style="font-weight: 600;color: #483D88;">
 									Pinning, Sorting, and Categorizing Notifications: A Mixed-methods Usage and Experience Study of Mobile Notification-management Features 
 									</span></a> 
 									<br><span style="font-weight: 500;color: #483D88;">
-									<!--Yong-Han Lin,  Li-Ting Su, Uei-Dar Chen, Yi-Chi Lee, Peng-Jui Wang, Yung-Ju Chang (Under Review)-->
-									<em>Coming Soon at UbiComp/ISWC '24</em>
+									Yong-Han Lin,  Li-Ting Su, Uei-Dar Chen, Yi-Chi Lee, Peng-Jui Wang, Yung-Ju Chang (IMWUT - UbiComp/ISWC '24)
+									</span>
+									<br><span style="font-weight: 500;color: #483D88;">
+									<a href="./files/NotiManager_Evaluation_IMWUT_2024.pdf" target="_blank" style="text-decoration: underline;"><span style="color: #483D88;">PDF</span></a> ‧
+									<a href="https://dl.acm.org/doi/10.1145/3678579" target="_blank" style="text-decoration: underline;"><span style="color: #483D88;">ACM Digital Library</span></a> ‧
+									<a class="citation_trigger" style="cursor: pointer; text-decoration: underline;"><span id="bib_IMWUT" style="color: #483D88;">BibTex</span></a> ‧
+									<a class="citation_trigger" style="cursor: pointer; text-decoration: underline;"><span id="ref_IMWUT" style="color: #483D88;">Reference</span></a>
+									</span>
 									</span>
 							</div>  
 							<div id="hybrid" style="padding-top:30px;">
@@ -303,9 +309,79 @@
 			
 			var elementClicked_bib_hybrid = false;
 			var elementClicked_ref_hybrid = false;
+			var elementClicked_bib_IMWUT = false;
+			var elementClicked_ref_IMWUT = false;
 
 			document.getElementById('publications').addEventListener('click', function(event) {
 				
+				if (event.target && event.target.id === 'ref_IMWUT') {
+					
+					var abs = document.getElementById("IMWUT");
+					
+					if(elementClicked_ref_IMWUT){
+						$("#add_ref_IMWUT").remove();
+						elementClicked_ref_IMWUT = false;
+					}else{	
+						
+						elementClicked_ref_IMWUT = true;
+						abs.innerHTML +=
+							'<div id="add_ref_IMWUT" style="margin-top:10px;">' +
+								'<div class="tooltip">' +
+									'<button style="font-weight: 600; background-color: #483D88; border-radius: 5px; padding: 0 10px; margin-bottom: 10px;" onclick="copyTextIMWUT(\'reference\')">'+
+										'<span class="tooltiptext">Copy citation</span>Reference <i class="fa fa-copy"></i>' + 
+									'</button>' +
+								'</div>' +
+								'<p id="refer" style="color: black; background-color: rgb(229, 229, 229); padding: 10px; border-radius: 5px; font-family: monospace; font-size: 12px;">' +
+									'Yong-Han Lin, Li-Ting Su, Uei-Dar Chen, Yi-Chi Lee, Peng-Jui Wang, and Yung-Ju Chang. 2024. '+
+									'Pinning, Sorting, and Categorizing Notifications: A Mixed-methods Usage and Experience Study of Mobile Notification-management Features. '+
+									'Proc. ACM Interact. Mob. Wearable Ubiquitous Technol. 8, 3, Article 115 (August 2024), 27 pages. https://doi.org/10.1145/3678579'+
+								'</p>' +
+							'</div>'
+						;
+					}
+					
+				}else if(event.target && event.target.id === 'bib_IMWUT') {
+					
+					var abs = document.getElementById("IMWUT");
+					
+					if(elementClicked_bib_IMWUT){
+						$("#add_bib_IMWUT").remove();
+						elementClicked_bib_IMWUT = false;
+					}else{	
+						
+						elementClicked_bib_IMWUT = true;
+						abs.innerHTML +=
+							'<div id="add_bib_IMWUT" style="margin-top:10px;">' +
+								'<div class="tooltip">' +
+								'<button style="font-weight: 600; background-color: #483D88; border-radius: 5px; padding: 0 10px; margin-bottom: 10px;" onclick="copyTextIMWUT(\'bibtex\')">' +
+									'<span class="tooltiptext">Copy citation</span>BibTex <i class="fa fa-copy"></i>' +
+								'</button>' +
+								'</div>' +
+								'<div id="bibtex" style="color: black; overflow: auto; white-space: nowrap;overflow-y: hidden;background-color: rgb(229, 229, 229); padding: 10px; border-radius: 5px; font-family: monospace; font-size: 12px;">' +
+								'@article{notimanagerEvaluation2024,' +
+								'<br>&nbsp;&nbsp;author = {Lin, Yong-Han and Su, Li-Ting and Chen, Uei-Dar and Lee, Yi-Chi and Wang, Peng-Jui and Chang, Yung-Ju},' +
+								'<br>&nbsp;&nbsp;title = {Pinning, Sorting, and Categorizing Notifications: A Mixed-methods Usage and Experience Study of Mobile Notification-management Features},' +
+								'<br>&nbsp;&nbsp;year = {2024},' +
+								'<br>&nbsp;&nbsp;issue_date = {August 2024},' +
+								'<br>&nbsp;&nbsp;publisher = {Association for Computing Machinery},' +
+								'<br>&nbsp;&nbsp;address = {New York, NY, USA},' +
+								'<br>&nbsp;&nbsp;volume = {8},' +
+								'<br>&nbsp;&nbsp;number = {3},' +
+								'<br>&nbsp;&nbsp;url = {https://doi.org/10.1145/3678579},' +
+								'<br>&nbsp;&nbsp;doi = {10.1145/3678579},' +
+								'<br>&nbsp;&nbsp;journal = {Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.},' +
+								'<br>&nbsp;&nbsp;month = sep,' +
+								'<br>&nbsp;&nbsp;articleno = {115},' +
+								'<br>&nbsp;&nbsp;numpages = {27},' +
+								'<br>&nbsp;&nbsp;keywords = {categorizing, notification management, pinning, smartphone notifications, sorting},' +
+								'<br>} ' +
+								'</div>' +
+							'</div>';
+						
+					}
+					
+				}
+			
 				if (event.target && event.target.id === 'ref_hybrid') {
 					
 					var abs = document.getElementById("hybrid");
@@ -400,6 +476,35 @@
 						"  keywords = {categorization, sorting, pinning, notification management, notification display order},\n" +
 						"  location = {Cancun, Quintana Roo, Mexico},\n" +
 						"  series = {UbiComp/ISWC '23 Adjunct}\n" +
+						"}"
+					);
+				}
+				
+			}
+			
+			function copyTextIMWUT(copy_type) {
+			
+				// Copy the text inside the text field
+				if(copy_type=="reference"){
+					//navigator.clipboard.writeText(document.getElementById('refer').innerHTML);
+					navigator.clipboard.writeText("Yong-Han Lin, Li-Ting Su, Uei-Dar Chen, Yi-Chi Lee, Peng-Jui Wang, and Yung-Ju Chang. 2024. Pinning, Sorting, and Categorizing Notifications: A Mixed-methods Usage and Experience Study of Mobile Notification-management Features. Proc. ACM Interact. Mob. Wearable Ubiquitous Technol. 8, 3, Article 115 (August 2024), 27 pages. https://doi.org/10.1145/3678579");
+				}else if(copy_type=="bibtex"){
+					navigator.clipboard.writeText("@article{notimanagerEvaluation2024,\n" +
+						"  author = {Lin, Yong-Han and Su, Li-Ting and Chen, Uei-Dar and Lee, Yi-Chi and Wang, Peng-Jui and Chang, Yung-Ju},\n" +
+						"  title = {Pinning, Sorting, and Categorizing Notifications: A Mixed-methods Usage and Experience Study of Mobile Notification-management Features},\n" +
+						"  year = {2024},\n" +
+						"  issue_date = {August 2024},\n" +
+						"  publisher = {Association for Computing Machinery},\n" +
+						"  address = {New York, NY, USA},\n" +
+						"  volume = {8},\n" +
+						"  number = {3},\n" +
+						"  url = {https://doi.org/10.1145/3678579},\n" +
+						"  doi = {10.1145/3678579},\n" +
+						"  journal = {Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.},\n" +
+						"  month = sep,\n" +
+						"  articleno = {115},\n" +
+						"  numpages = {27},\n" +
+						"  keywords = {categorizing, notification management, pinning, smartphone notifications, sorting},\n" +
 						"}"
 					);
 				}
