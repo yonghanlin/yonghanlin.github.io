@@ -76,10 +76,10 @@
 						I am privileged to be advised by <a href="https://www.armuro.info/" target="_blank">Dr. Yung-Ju (Stanley) Chang</a>.
 					</p>
 					<p>
-						My research interests lie in human-computer interaction (HCI).
-						I am interested in designing, building, and studying interactive systems that empower users to consume and interact with digital information effectively.
+						My research interests lie in human-AI interaction.
+						I am interested in designing, building, and studying interactive AI systems that empower users to consume and interact with digital information effectively.
 						<!--My goal is to empower people to be able to use technologies as helpful tools that enhance their lives, enabling them to maintain control over the use and avoid negative impacts on their well-being.-->
-						In my recent work, I designed and built a <a href="./notimanager" target="_blank">notification management system</a> to facilitate users' workflows in reading and handling notifications. 
+						In my recent work, I designed and built a <a href="./notimanager" target="_blank">intelligent notification system</a> to facilitate users' workflows in reading and handling notifications. 
 						This was achieved through automated sorting and categorization, complemented by manual functions for users to adjust these automations.
 						I also studied users' experiences with this system by using mixed-methods. 
 						<!--As a HCI researcher, I envision a future where every automated system is intelligent enough to understand and adapt to the unique needs of individuals across various contexts while also enabling each user to have autonomy over its use.-->
@@ -183,9 +183,9 @@
 			<section id="publications" class="section_topic">
 				<h2>Publications</h2>
 				<h5><span style="font-weight: 600;">Keywords:</span>
+					<a class="topic_trigger" id="topic_trigger_experience_sampling_method" style="cursor: pointer;"><span style="color: #035772;">human-AI interaction</span></a> / 
 					<a class="topic_trigger" id="topic_trigger_system_evaluation" style="cursor: pointer;"><span style="color: #035772;">user empowerment</span></a> /
 					<a class="topic_trigger" id="topic_trigger_mobile_notifications" style="cursor: pointer;"><span style="color: #035772;">mobile notifications</span></a> / 
-					<!--<a class="topic_trigger" id="topic_trigger_experience_sampling_method" style="cursor: pointer;"><span style="color: #035772;">experience sampling</span></a> /--> 
 					<!--<a class="topic_trigger" id="topic_trigger_ubiquitous_devices" style="cursor: pointer;"><span style="color: #035772;">context-aware computing</span></a> /--> 
 					
 					<a class="topic_trigger" id="topic_trigger_social_support" style="cursor: pointer;"><span style="color: #035772;">information consumption</span></a></h5>
@@ -195,7 +195,7 @@
 					<!--<h4><span style="font-weight: 600;">✨Main Research:</span> Notification Management - [<a><div class="tooltip" style="cursor: pointer; color: #035772;">Project Site<span class="tooltiptext">Soon to come...</span></div></a>]</h4>-->
 					<h4><span style="font-weight: 600;">
 					<i class="fas fa-thumbtack" style="padding:0 4px 0 0;font-size:17px;vertical-align: middle;"></i>Recent Main Research:
-					</span> <a href="./notimanager" target="_blank"><span style="color: #035772;">Supporting Smartphone Users in Managing Notifications</span></a></h4>
+					</span> <a href="./notimanager" target="_blank"><span style="color: #035772;">Facilitating the Process of Reading & Handling Notifications</span></a></h4>
 					<div class="row">
 						<ul>							
 							<li>
@@ -246,7 +246,7 @@
 												<u>Yong-Han Lin</u>,  Li-Ting Su, Uei-Dar Chen, Peng-Jui Wang, Yi-Chi Lee, Yung-Ju Chang 
 												<!--<br>In<em> Adjunct Proceedings of the 2023 ACM International Joint Conference on Pervasive and Ubiquitous Computing 
 												& the 2023 ACM International Symposium on Wearable Computing</em> (UbiComp/ISWC ’23)-->
-												<br><em>UbiComp 2023</em>
+												<br><em>UbiComp 2023 Adjunct</em>
 												<br>
 												<span style="font-weight: 600;color: #035772;"><i class="fas fa-caret-square-down" style="padding:0 4px 0 0;font-size:17px;vertical-align: middle;"></i></span><a class="abs_trigger" id="abs_auto_manual" style="cursor: pointer;">Abstract</a>
 												<span style="font-weight: 600;color: #035772;"><i class="fas fa-file-alt" style="padding:0 4px 0 10px;font-size:17px;vertical-align: middle;"></i></span><a href="files/NotiManager_UbiComp_2023.pdf" target="_blank">PDF</a> 
@@ -272,7 +272,7 @@
 				
 				<div class="row">
 					<ul>
-						<li><div class="trigger mobile_notifications experience_sampling_method ubiquitous_devices system_evaluation social_support" id="noti_alert" 
+						<li><div class="trigger mobile_notifications ubiquitous_devices system_evaluation social_support" id="noti_alert" 
 						style="margin-bottom: 5px; padding: 5px; display: flex; align-items: center; flex-direction: column;">
 						
 							<div class="publication_item">
@@ -298,7 +298,7 @@
 							</div>
 						</div></li>
 						<li>
-							<div class="trigger mobile_notifications experience_sampling_method ubiquitous_devices" id="multi_device" 
+							<div class="trigger mobile_notifications ubiquitous_devices" id="multi_device" 
 								style="margin-bottom: 5px; padding: 5px; display: flex; align-items: center; flex-direction: column;">
 							
 								<div class="publication_item">
@@ -606,7 +606,7 @@
 						slides.item(i).style.backgroundColor = '#FAEBD7';
 					}
     				document.getElementById("topic_trigger_mobile_notifications").style.fontWeight="900";
-					//document.getElementById("topic_trigger_experience_sampling_method").style.fontWeight="400";
+					document.getElementById("topic_trigger_experience_sampling_method").style.fontWeight="400";
 					//document.getElementById("topic_trigger_ubiquitous_devices").style.fontWeight="400";
 					document.getElementById("topic_trigger_system_evaluation").style.fontWeight="400";
 					document.getElementById("topic_trigger_social_support").style.fontWeight="400";
@@ -618,7 +618,7 @@
 				}
 			}
 
-			/*document.getElementById('topic_trigger_experience_sampling_method').onclick = function(){
+			document.getElementById('topic_trigger_experience_sampling_method').onclick = function(){
 				var tr = document.getElementsByClassName("trigger");
 				for (var i = 0; i < tr.length; i++) {
 					tr.item(i).style.backgroundColor = 'white';
@@ -639,7 +639,7 @@
 					}
 					document.getElementById("topic_trigger_mobile_notifications").style.fontWeight="400";
 					document.getElementById("topic_trigger_experience_sampling_method").style.fontWeight="900";
-					document.getElementById("topic_trigger_ubiquitous_devices").style.fontWeight="400";
+					//document.getElementById("topic_trigger_ubiquitous_devices").style.fontWeight="400";
 					document.getElementById("topic_trigger_system_evaluation").style.fontWeight="400";
 					document.getElementById("topic_trigger_social_support").style.fontWeight="400";
 					elementClicked_mobile_notifications = false;
@@ -648,7 +648,7 @@
 					elementClicked_social_support = false;
 					elementClicked_experience_sampling_method = true;
 				}
-			}*/
+			}
 
 			/*document.getElementById('topic_trigger_ubiquitous_devices').onclick = function(){
 				var tr = document.getElementsByClassName("trigger");
@@ -702,7 +702,7 @@
 						slides.item(i).style.backgroundColor = '#FAEBD7';
 					}
 					document.getElementById("topic_trigger_mobile_notifications").style.fontWeight="400";
-					//document.getElementById("topic_trigger_experience_sampling_method").style.fontWeight="400";
+					document.getElementById("topic_trigger_experience_sampling_method").style.fontWeight="400";
 					//document.getElementById("topic_trigger_ubiquitous_devices").style.fontWeight="400";
 					document.getElementById("topic_trigger_system_evaluation").style.fontWeight="900";
 					document.getElementById("topic_trigger_social_support").style.fontWeight="400";
@@ -733,7 +733,7 @@
 						slides.item(i).style.backgroundColor = '#FAEBD7';
 					}
 					document.getElementById("topic_trigger_mobile_notifications").style.fontWeight="400";
-					//document.getElementById("topic_trigger_experience_sampling_method").style.fontWeight="400";
+					document.getElementById("topic_trigger_experience_sampling_method").style.fontWeight="400";
 					//document.getElementById("topic_trigger_ubiquitous_devices").style.fontWeight="400";
 					document.getElementById("topic_trigger_system_evaluation").style.fontWeight="400";
 					document.getElementById("topic_trigger_social_support").style.fontWeight="900";
