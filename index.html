@@ -73,7 +73,7 @@
 		
 					<p>
 						Hi! I am Yong-Han, a first-year master's student in <a href="https://siebelschool.illinois.edu/" target="_blank">Computer Science</a> at the <img class="logo" src="images/uiuc_logo.png"><a href="https://illinois.edu/" target="_blank">University of Illinois Urbana-Champaign</a>. 
-						Before starting my graduate studies, I worked on research projects that support researchers in analyzing people's use of mobile media, aiming to ultimately improve people's experiences with their phones.
+						Before starting my graduate studies, I worked on research that supports researchers in analyzing people's use of mobile media, aiming to ultimately improve people's experiences with their phones.
 						I am fortunate to be advised by <a href="https://www.armuro.info/" target="_blank">Dr. Yung-Ju Chang</a>.
 					</p>
 					<p>
@@ -291,6 +291,56 @@
 				
 				<div class="row">
 					<ul>
+						<li>
+							<div class="trigger mobile_notifications experience_sampling_method ubiquitous_devices system_evaluation trigger social_support" id="notisummary" 
+								style="margin-bottom: 5px; padding: 5px; display: flex; align-items: center; flex-direction: column;">
+							
+								<div class="publication_item">
+									<!-- Figure on the Left -->
+									<img src="images/publication_image/notisummary.png" alt="Thumbnail" class="publication_image" style="padding:10px;">
+
+									<!-- Text Content -->
+									<div>
+										<span style="font-weight: 600;color: #035772;">From Overwhelmed to Overview: Understanding Smartphone Users' Preferences and Expectations in Relieving Notification Overload via Text Summarization </span> 
+											<br>Uei-Dar Chen, Peng-Jui Wang, Yi-Chi Lee, <u>Yong-Han Lin</u>, Yu-Ling Chou, Yung-Ju Chang 
+											<!--<br>In<em> Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems</em> (CHI '23)-->
+											<br><em>MobileHCI 2025</em>
+										   <br>
+											<span style="font-weight: 600;color: #035772;"><i class="fas fa-caret-square-down" style="padding:0 4px 0 0;font-size:17px;vertical-align: middle;"></i></span>
+											<a class="abs_trigger" id="abs_notisummary" style="cursor: pointer;">Abstract</a>
+											<!--<span style="font-weight: 600;color: #035772;"><i class="fas fa-file-alt" style="padding:0 4px 0 10px;font-size:17px;vertical-align: middle;"></i></span>
+											<a href="files/Multi_Device_Noti_CHI_2023.pdf" target="_blank">PDF</a>--> 
+											<span style="font-weight: 600;color: #035772;"><i class="ai ai-acmdl-square" style="padding:0 4px 0 10px;font-size:19px;vertical-align: middle;"></i></span>
+											<a href="https://dl.acm.org/doi/full/10.1145/3743703" target="_blank">ACM DL</a> 
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="trigger social_support" id="screenshot_label" 
+								style="margin-bottom: 5px; padding: 5px; display: flex; align-items: center; flex-direction: column;">
+							
+								<div class="publication_item">
+									<!-- Figure on the Left -->
+									<img src="images/publication_image/screenshot_label.png" alt="Thumbnail" class="publication_image" style="padding:10px;">
+
+									<!-- Text Content -->
+									<div>
+										<span style="font-weight: 600;color: #035772;">PULSE: A Screenshot-Based Labeling Tool for Investigating Smartphone Behavior, Intent, and Perception </span> 
+											<br>Je-Wei Hsu, Ching-Ting Lin, Uei-Dar Chen, Jui-Ching Kuo, Jui-Chun Liu, <u>Yong-Han Lin</u>, Chen-Ya Chen, Razieh Pourafshari, Yifei Lu, Joseph Bayer, Yung-Ju Chang 
+											<!--<br>In<em> Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems</em> (CHI '23)-->
+											<br><em>UbiComp 2025 Adjunct</em>
+										   <br>
+											<span style="font-weight: 600;color: #035772;"><i class="fas fa-caret-square-down" style="padding:0 4px 0 0;font-size:17px;vertical-align: middle;"></i></span>
+											<a class="abs_trigger" id="abs_screenshot_label" style="cursor: pointer;">Abstract</a>
+											<!--<span style="font-weight: 600;color: #035772;"><i class="fas fa-file-alt" style="padding:0 4px 0 10px;font-size:17px;vertical-align: middle;"></i></span>
+											<a href="files/Multi_Device_Noti_CHI_2023.pdf" target="_blank">PDF</a>--> 
+											<span style="font-weight: 600;color: #035772;"><i class="ai ai-acmdl-square" style="padding:0 4px 0 10px;font-size:19px;vertical-align: middle;"></i></span>
+											<a href="https://doi.org/10.1145/3714394.3754395" target="_blank">ACM DL</a> 
+									</div>
+								</div>
+							</div>
+						</li>
 						<li><div class="trigger mobile_notifications ubiquitous_devices system_evaluation social_support" id="noti_alert" 
 						style="margin-bottom: 5px; padding: 5px; display: flex; align-items: center; flex-direction: column;">
 						
@@ -470,7 +520,7 @@
 		<footer id="footer">
 			<div class="inner">
 				<ul class="copyright">
-					<li>&copy; 2025 Yong-Han Lin. </li>
+					<li>&copy; 2026 Yong-Han Lin. </li>
 					<li>Design: <a href="http://html5up.net" target="_blank" class="footer_button">HTML5 UP</a>.</li>
 				</ul>
 			</div>
@@ -489,6 +539,8 @@
 			var elementClicked_abs_notimanager = false;
 			var elementClicked_abs_noti_alert = false;
 			var elementClicked_abs_multi_device = false;
+			var elementClicked_abs_screenshot_label = false;
+			var elementClicked_abs_notisummary = false;
 			var elementClicked_abs_visual_content_OSS = false;
 
 			document.getElementById('publications').addEventListener('click', function(event) {
@@ -585,6 +637,34 @@
 						abs.innerHTML +=
 							"<div id='abs_text_multi_device' style='border:dashed; padding:1em; border-width:1px; border-radius:5px; margin:5px 0; border-color:#AAAAAA;'>" +
 							"People nowadays can use multiple devices to interact with notifications, whether via noticing, glancing, reading, or acting upon them. Prior research has focused on actual usage or on device preferences. However, users’ ideal experience of cross-device notification-interaction might differ from their current practices (due to situational limitations) and/or across the four notification-interaction stages. We therefore conducted an experience-sampling method study with multi-device users to investigate these gaps and the influence of device context. Our results reveal that nearly half of the time, the non-phone devices the participants had ranked as their top preferences for notification-interaction were not actually used, due to the devices’ context. Beyond device context, the participants’ choices of devices for notification-interaction were heavily determined by 1) their preferences that particular notification-interaction stages to take place (or not) on particular devices; and 2) the device on which they had undertaken the former stage." +
+							"</div>"
+						;
+					}
+				}else if(event.target && event.target.id === 'abs_screenshot_label'){
+					var abs = document.getElementById("screenshot_label");
+					
+					if(elementClicked_abs_screenshot_label){
+						$("#abs_text_multi_device").remove();
+						elementClicked_abs_screenshot_label = false;
+					}else{	
+						elementClicked_abs_screenshot_label = true;
+						abs.innerHTML +=
+							"<div id='abs_text_multi_device' style='border:dashed; padding:1em; border-width:1px; border-radius:5px; margin:5px 0; border-color:#AAAAAA;'>" +
+							"Understanding mobile phone behavior has attracted significant attention in HCI and mobile health research. While experience sampling methods (ESM) are widely used, they primarily offer discrete snapshots, making it difficult to observe behavioral flow, transitions, and differences between phone use associated with varying intents and levels of habitualness. We introduce Pulse (Phone Use Labeling via ScrEenshot), a research application that integrates screenshot logging, passive sensor data collection, and a screenshot-based labeling interface designed to support efficient labeling workflows. The app also supports micro-ESM delivery and a dedicated researcher mode allows for flexible configuration and testing of study parameters. We report a case study deployment of Pulse, through which we collected approximately 1.65 million labeled screenshots from 25 participants. Preliminary analysis reveals associations between users' phone use intents and their subsequent evaluations of time use, demonstrating the utility of screenshot-based labeling for understanding mobile behavior in context." +
+							"</div>"
+						;
+					}
+				}else if(event.target && event.target.id === 'abs_notisummary'){
+					var abs = document.getElementById("notisummary");
+					
+					if(elementClicked_abs_notisummary){
+						$("#abs_text_multi_device").remove();
+						elementClicked_abs_notisummary = false;
+					}else{	
+						elementClicked_abs_notisummary = true;
+						abs.innerHTML +=
+							"<div id='abs_text_multi_device' style='border:dashed; padding:1em; border-width:1px; border-radius:5px; margin:5px 0; border-color:#AAAAAA;'>" +
+							"To help users manage the overwhelming influx of smartphone notifications, this study explores how large language models (LLMs) can be leveraged to generate notification summaries. We developed an Android application that integrates ChatGPT to summarize notifications and conducted an in-the-wild deployment to examine how users guided the model. To further understand user expectations for LLM-generated summaries, we interviewed 20 participants following a week-long engagement with the app. Our findings reveal five main strategies that users employed in their prompts for generating summaries. Additionally, interviewees expected summaries to prioritize three types of notifications, preferred three levels of information disclosure influenced by content anticipation and perceived criticality, and used three different approaches to synthesizing notifications based on their interrelationships. Finally, interviewees envisioned notification summarization functioning like a virtual assistant, desiring capabilities beyond simple information condensation, including support for task and information management, revisiting archived content, and tracking activities for reflection." +
 							"</div>"
 						;
 					}
